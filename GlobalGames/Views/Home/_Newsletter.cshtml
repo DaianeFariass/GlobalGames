@@ -1,0 +1,25 @@
+﻿@model GlobalGames.Data.Entities.Newsletter
+
+    <section id="showcase">
+        <div class="container">
+            <h1>A melhor plataforma de realidade virtual</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                facilisis lectus at sapien dapibus facilisis. Ut maximus nunc urna,
+                non congue diam mattis ut. Fusce eros leo, pulvinar ut ultrices non,
+                aliquam nec quam. Integer gravida ut mauris ac ultrices. Phasellus
+                iaculis elementum condimentum.
+            </p>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <div class="container">
+            <h1>Subscreve a nossa newsletter</h1>
+           <form asp-action="Subscrever" enctype="multipart/form-data">
+            <input type="email" placeholder="Coloque o email..." asp-for="Email" />
+                <button type="submit" action="Subscrever" class="button_1">Subscrever</button>
+
+            </form>
+        </div>
+    </section>
