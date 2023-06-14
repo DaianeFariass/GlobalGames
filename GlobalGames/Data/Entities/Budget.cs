@@ -1,6 +1,6 @@
 ﻿namespace GlobalGames.Data.Entities
 {
-    public class Budget
+    public class Budget : IEntity
     {
         public int Id { get; set; }
 

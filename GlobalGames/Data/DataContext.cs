@@ -1,6 +1,7 @@
 ﻿using GlobalGames.Data.Entities;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
 using System.Net.Http.Headers;
 
 namespace GlobalGames.Data
@@ -16,6 +17,6 @@ namespace GlobalGames.Data
         
         
         }
-        
+
     }
 }
