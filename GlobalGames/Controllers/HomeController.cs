@@ -45,7 +45,7 @@ namespace GlobalGames.Controllers
         {
             if (ModelState.IsValid)
             {
-                newsletter.user = await _userHelper.GetUserByEmailAsync("daia_farias@hotmail.com");
+                newsletter.user = await _userHelper.GetUserByEmailAsync(this.User.Identity.Name);
                 await _newsletterRepository.CreateAsync(newsletter);
                 return RedirectToAction(nameof(Index));
             }
@@ -58,7 +58,7 @@ namespace GlobalGames.Controllers
         {
             if (ModelState.IsValid)
             {
-                budget.user = await _userHelper.GetUserByEmailAsync("daia_farias@hotmail.com");
+                budget.user = await _userHelper.GetUserByEmailAsync(this.User.Identity.Name);
                 await _budgetRepository.CreateAsync(budget);
                 return RedirectToAction(nameof(Index));
             }
