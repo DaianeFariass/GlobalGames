@@ -8,6 +8,9 @@
 
         public string Email { get; set; }
 
-        public string Mensagem { get; set; }    
+        public string Mensagem { get; set; }
+
+        public User user { get; set; }
+  
     }
 }

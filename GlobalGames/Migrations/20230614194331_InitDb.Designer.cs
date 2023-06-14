@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GlobalGames.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20230609131602_InitDb")]
+    [Migration("20230614194331_InitDb")]
     partial class InitDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
